@@ -1,8 +1,8 @@
 
 void main(List<String> args) {
   
-  List li1 = [1,2,3,4,5,6,7,8];
-  List li2 = [0,1,4,5,6];
+  List<int> li1 = [1,2,3,4,5,6,7,8];
+  List<int> li2 = [0,1,4,5,6];
   print('-------Declare and initialize---------');
   print('$li1 \n$li2');
   
@@ -37,6 +37,6 @@ void main(List<String> args) {
   print('$li1 \n$li2');
 
   print('-------Create new list from li1---------');
-  List li3 = li1.getRange(2, 5).toList();
+  List<int> li3 = li1.getRange(2, 5).toList();
   print('$li3');
 }

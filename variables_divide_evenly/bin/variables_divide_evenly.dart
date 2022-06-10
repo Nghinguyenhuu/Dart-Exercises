@@ -7,6 +7,11 @@ int main(List<String> args) {
   print('Enter a check number: ');
   int check= int.parse(stdin.readLineSync()!);
 
+  while(check == 0){
+    print('Errror!!!Check number is 0!!! \nEnter a check number: ');
+    check= int.parse(stdin.readLineSync()!);
+  }
+
   if(num % check == 0){
     print('it devides evenly!');
   }
